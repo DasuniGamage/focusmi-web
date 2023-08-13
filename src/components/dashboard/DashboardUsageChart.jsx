@@ -23,11 +23,10 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
     </text>
   );
 };
-3
-export default class Example extends PureComponent {
 
-  render() {
-    return (        
+function DashboardUsageChart() {
+    return (    
+      <div style={{width:'200px',height:'200px'}}> 
       <ResponsiveContainer width="100%" height="100%">
         <PieChart width={400} height={400}>
           <Pie
@@ -46,6 +45,7 @@ export default class Example extends PureComponent {
           </Pie>
         </PieChart>
       </ResponsiveContainer>
+      </div>  
     );
   }
-}
+export default DashboardUsageChart;
