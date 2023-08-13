@@ -1,5 +1,5 @@
-import React from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import React, { PureComponent } from 'react';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
   {
@@ -46,13 +46,11 @@ const data = [
   },
 ];
 
-
-function DashboardSalesChart() {
+function Revenue() {
   return (
-    <div >
-        <div style={{width:'600px',height:'400px'}}>
+    <div style={{width:'600px',height:'300px'}}>
         <ResponsiveContainer width="100%" height="100%">
-        <BarChart
+        <LineChart
           width={500}
           height={300}
           data={data}
@@ -68,15 +66,12 @@ function DashboardSalesChart() {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="pv" fill="#8884d8" />
-          <Bar dataKey="uv" fill="#ffffff" />
-        </BarChart>
+          <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
+          <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+        </LineChart>
       </ResponsiveContainer>
-      </div>
     </div>
   )
 }
 
-export default DashboardSalesChart;
-
-
+export default Revenue

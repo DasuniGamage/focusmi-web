@@ -36,15 +36,7 @@ function DashboardStatus() {
               </div>
             </div>
         </BoxWrapper>
-        <BoxWrapper>
-        <div className='flex flex-row gap-4 mx-auto'> 
-            <div className='flex items-center text-[#55a06a]'><MdInstallMobile size={30}/></div>
-              <div >
-                <h1 className='text-xs'>Total Installed</h1>
-                <h1 className='text-s font-bold flex justify-center'>29,892</h1>
-              </div>
-            </div>
-        </BoxWrapper>
+        
     </div>
   )
 }

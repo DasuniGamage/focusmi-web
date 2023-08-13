@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from './Assets/logo.png';
 import { FiMail,FiLock } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import Footer from './dummy/Footer';
 
 
@@ -27,6 +27,11 @@ function Login() {
     console.log('Form data submitted:', formData);
     // You can perform further actions here, like sending data to a server
   };
+    let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+      let path = `dashboard`; 
+      navigate(path);
+    }
   return (
     <>
     <div className='bg-neutral-500 w-full h-screen  flex justify-center items-center text-white'>
@@ -59,7 +64,9 @@ function Login() {
                 />
             </div>
             <div className=' w-[400px] mx-10 my-5 flex flex-col items-center   m-4'>
-              <button type="submit" className='font-bold w-full h-[50px] rounded-full bg-[#55a06a] hover:bg-neutral-200 uppercase mt-10'>Login</button>
+              
+              <button type="submit" className='font-bold w-full h-[50px] rounded-full bg-[#55a06a] hover:bg-neutral-200 uppercase mt-10' onClick={routeChange}>Login</button>
+              
               <Link to={'/forgotpw'}><span className='text-blue-900 text-sm underline p-4'>Forgot password ?</span></Link>
               
             </div>
