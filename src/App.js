@@ -8,9 +8,11 @@ import {
 } from "react-router-dom";
 import Counsellors from './components/counsellors/Counsellors';
 import Login from './Login';
-import CoursesPage from './components/courses/CoursesPage';
 import AddCounselors from './components/counsellors/AddCounsellors';
-
+import CoursesPage from './components/Courses/CoursesPage';
+import AddCoursePage from './components/Courses/AddCoursePage';
+import CreateCoursePage from './components/Courses/CreateCoursePage';
+import LevelContentEditor from './components/Courses/LevelContentEditor';
 
 function App() {
   
@@ -23,6 +25,12 @@ function App() {
           <Route path="counsellors" element={<Counsellors/>}/>
           <Route path="add-counsellors" element={<AddCounselors/>}/>
           <Route path="courses" element={<CoursesPage/>}/>
+          <Route path="add-courses" element={<AddCoursePage/>}/>
+          <Route path="create-courses" element={<CreateCoursePage/>}/>
+          <Route path="edit-levels" element={<LevelContentEditor/>}/>
+
+          {/* <Route path="/drafted" component={DraftedCoursesPage} /> */}
+          
 
         </Route>
         <Route path="Login" element={<Login/>}/>
