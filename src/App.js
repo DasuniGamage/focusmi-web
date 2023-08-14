@@ -13,6 +13,16 @@ import CoursesPage from './components/Courses/CoursesPage';
 import AddCoursePage from './components/Courses/AddCoursePage';
 import CreateCoursePage from './components/Courses/CreateCoursePage';
 import LevelContentEditor from './components/Courses/LevelContentEditor';
+import CreateTips from './components/DailyTips/CreateTips';
+import DailyTipsMain from './components/DailyTips/DailyTipsMain';
+// import EditTipPage from './components/DailyTips/EditTipPage';
+
+// import PostedTips from './components/DailyTips/PostedTips';
+// import DraftedTips from './components/DailyTips/DraftedTips';
+
+
+
+
 
 function App() {
   
@@ -28,6 +38,14 @@ function App() {
           <Route path="add-courses" element={<AddCoursePage/>}/>
           <Route path="create-courses" element={<CreateCoursePage/>}/>
           <Route path="edit-levels" element={<LevelContentEditor/>}/>
+          <Route path="daily-tips" element={<DailyTipsMain/>}/>
+          <Route path="create-tips" element={<CreateTips/>}/>
+          {/* <Route path="edit-tip/:id" element={<EditTipPage/>}/> */}
+          
+          
+          {/* <Route path="posted-tips" element={<PostedTips/>}/>
+          <Route path="drafted-tips" element={<DraftedTips/>}/> */}
+          
 
           {/* <Route path="/drafted" component={DraftedCoursesPage} /> */}
           
