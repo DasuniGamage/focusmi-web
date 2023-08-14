@@ -10,7 +10,8 @@ import { Link } from 'react-router-dom';
 const launchedCourses = [
   {
     id: 1,
-    title: 'Fundamentals of Mindfulness',
+    title: 'Tip 1',
+    day:'Monday',
     description: 'Learn the fundamentals of Mindfulness',
     image: require ('../../Assets/m2.jpeg'),
   },
@@ -154,7 +155,7 @@ const CoursesPage = () => {
      </div>
     <TabPanel>
     
-    <div className="flex flex-wrap justify-center max-h-[70vh] overflow-y-scroll">
+    <div className="flex flex-wrap justify-center max-h-[60vh] overflow-y-scroll">
         
       {draftedCourses.map((course) => (
         <CourseCard key={course.id} course={course} />

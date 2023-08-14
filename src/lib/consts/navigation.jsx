@@ -29,7 +29,7 @@ export const DASHBOARD_SIDEBAR_LINKS = [
     {
         key :'daily tips',
         lable : 'Daily Tips',
-        path : '/daily_tips',
+        path : '/daily-tips',
         icon: <FiSun/>
     },
 ]
