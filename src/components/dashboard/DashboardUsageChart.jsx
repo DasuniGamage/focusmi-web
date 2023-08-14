@@ -23,7 +23,6 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
     </text>
   );
 };
-
 function DashboardUsageChart() {
     return (    
       <div style={{width:'200px',height:'200px'}}> 

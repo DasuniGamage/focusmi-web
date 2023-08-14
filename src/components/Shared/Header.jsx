@@ -34,7 +34,7 @@ function Header() {
                           leaveTo="opacity-0 translate-y-1"
                   >
                 <Popover.Panel className= "absolute right-0 z-10 mt-2.5 w-80">
-                  <div className='bg-white rounded-sm shadow-md ring-1 ring-black ring-opacity-5 px-4 py-2.5'>
+                  <div className='bg-white rounded-sm shadow-md ring-1 ring-black ring-opacity-5 px-4 py-2.5 text-black'>
                     <strong className='font-medium'>Messages</strong>
                     <div className='mt-1 py-1 text-sm'>
                       This is messages panel.
@@ -63,7 +63,7 @@ function Header() {
                           leaveTo="opacity-0 translate-y-1"
                   >
                 <Popover.Panel className= "absolute right-0 z-10 mt-2.5 w-80">
-                  <div className='bg-white rounded-sm shadow-md ring-1 ring-black ring-opacity-5 px-4 py-2.5'>
+                  <div className='bg-white rounded-sm shadow-md ring-1 ring-black text-black ring-opacity-5 px-4 py-2.5'>
                     <strong className='font-medium'>Notifications</strong>
                     <div className='mt-1 py-1 text-sm'>
                       This is Notifications panel.
