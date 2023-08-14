@@ -3,7 +3,7 @@ import React from 'react';
 const Users = ({ users }) => {
   return (
     <div className="bg-white rounded-md shadow-md p-4 flex flex-col items-center">
-      <h2 className="text-xl font-semibold mb-4">Users</h2>
+      <h2 className="text-xl font-semibold mb-4 text-[#55a06a]">Users</h2>
       <table className='w-[2/3] shadow-lg'>
         <thead>
           <tr>

@@ -13,6 +13,8 @@ import CoursesPage from './components/Courses/CoursesPage';
 import AddCoursePage from './components/Courses/AddCoursePage';
 import CreateCoursePage from './components/Courses/CreateCoursePage';
 import LevelContentEditor from './components/Courses/LevelContentEditor';
+import Reports from './components/Reports/Reports';
+import IncomeStatement from './components/Reports/IncomeStatement';
 
 function App() {
   
@@ -27,10 +29,10 @@ function App() {
           <Route path="courses" element={<CoursesPage/>}/>
           <Route path="add-courses" element={<AddCoursePage/>}/>
           <Route path="create-courses" element={<CreateCoursePage/>}/>
-          <Route path="edit-levels" element={<LevelContentEditor/>}/>
+          <Route path="edit-levels" element={<LevelContentEditor/>}/>          
+          <Route path="reports" element={<Reports/>}/>
+          <Route path="reports/income-statement" element={<IncomeStatement/>}/>
 
-          {/* <Route path="/drafted" component={DraftedCoursesPage} /> */}
-          
 
         </Route>
         <Route path="Login" element={<Login/>}/>
