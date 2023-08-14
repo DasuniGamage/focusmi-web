@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import AddCounsellors from './AddCounsellors';
 import UsersTable from './UsersTable';
+import { FiUserPlus } from 'react-icons/fi';
 
 
 const usersData = [
@@ -37,19 +38,17 @@ function Counsellors() {
  
       
   return (
-    // <div className='w-11/12 h-[500px] bg-neutral-300 shadow-xl  mx-auto my-10 rounded-3xl p-8 '>
     <div className='w-11/12 mx-auto my-10 max-h-[70vh] overflow-y-scroll'>
-        <h1 className='text-[25px] font-extrabold text-center m-5 uppercase'>Counsellors</h1>
-      <UsersTable users={usersData} />
-      <div className='flex justify-end'>
-       
-        <button onClick={handleOpenModal} className="bg-[#83DE70] text-white px-3 py-2 rounded m-8 hover:bg-[#55a06a]  ">
-            Add New Counsellor
+        <h1 className='text-[25px] font-extrabold text-center mt-5 uppercase text-[#55a06a]'>Counsellors</h1>
+      <div className='flex justify-end'>       
+        <button onClick={handleOpenModal} className="bg-[#83DE70] text-white px-3 py-2 rounded mx-8 hover:bg-[#55a06a]  flex gap-2 items-center">
+            <FiUserPlus/> Add New Counsellor
         </button>
         <AddCounsellors isOpen={isModalOpen} onClose={handleCloseModal} onAdd={handleAddCounselor} />
-
-     
       </div>
+        <div>
+          <UsersTable users={usersData} />
+        </div>
       
       
     </div>

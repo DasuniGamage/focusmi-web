@@ -20,8 +20,8 @@ import DailyTipsMain from './components/DailyTips/DailyTipsMain';
 // import PostedTips from './components/DailyTips/PostedTips';
 // import DraftedTips from './components/DailyTips/DraftedTips';
 
-
-
+import Reports from './components/Reports/Reports';
+import IncomeStatement from './components/Reports/IncomeStatement';
 
 
 function App() {
@@ -37,6 +37,7 @@ function App() {
           <Route path="courses" element={<CoursesPage/>}/>
           <Route path="add-courses" element={<AddCoursePage/>}/>
           <Route path="create-courses" element={<CreateCoursePage/>}/>
+
           <Route path="edit-levels" element={<LevelContentEditor/>}/>
           <Route path="daily-tips" element={<DailyTipsMain/>}/>
           <Route path="create-tips" element={<CreateTips/>}/>
@@ -47,8 +48,11 @@ function App() {
           <Route path="drafted-tips" element={<DraftedTips/>}/> */}
           
 
-          {/* <Route path="/drafted" component={DraftedCoursesPage} /> */}
-          
+                   
+          <Route path="reports" element={<Reports/>}/>
+          <Route path="reports/income-statement" element={<IncomeStatement/>}/>
+
+
 
         </Route>
         <Route path="Login" element={<Login/>}/>
