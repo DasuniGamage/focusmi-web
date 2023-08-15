@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const launchedCourses = [
   {
     id: 1,
-    title: 'Tip 1',
+    title: 'Why mindfulness needs to our life',
     day:'Monday',
     description: 'Learn the fundamentals of Mindfulness',
     image: require ('../../Assets/m2.jpeg'),
@@ -29,40 +29,23 @@ const launchedCourses = [
   },
   {
     id: 4,
-    title: 'Introduction to React',
-    description: 'Learn the fundamentals of React.js',
+    title: 'Mindful Living: Discovering Inner Peace',
+    description: 'Finding Clarity in Chaos',
     image: require ('../../Assets/m5.jpeg'),
   },
   {
     id: 5,
-    title: 'JavaScript for Beginners',
-    description: 'A beginner-friendly guide to JavaScript programming',
+    title: 'Cultivating Presence',
+    description: 'How to keep concentration',
     image: require ('../../Assets/m7.jpeg'),
   },
   {
     id: 6,
-    title: 'Advanced CSS Techniques',
-    description: 'Master advanced CSS concepts and techniques',
+    title: 'Nurturing Your Inner Self',
+    description: 'Be happy with your self',
     image: require ('../../Assets/m6.jpeg'),
   },
-  {
-    id: 7,
-    title: 'Introduction to React',
-    description: 'Learn the fundamentals of React.js',
-    // image: require ('../assets/img3.jpg'),
-  },
-  {
-    id: 8,
-    title: 'JavaScript for Beginners',
-    description: 'A beginner-friendly guide to JavaScript programming',
-   
-  },
-  {
-    id: 9,
-    title: 'Advanced CSS Techniques',
-    description: 'Master advanced CSS concepts and techniques',
-  },
-  // Add more courses as needed
+
 ];
 
 const draftedCourses = [
@@ -86,39 +69,23 @@ const draftedCourses = [
     },
     {
       id: 4,
-      title: 'Introduction to React',
-      description: 'Learn the fundamentals of React.js',
+      title: ' Equilibrium for Body and Mind',
+      description: 'Its important to keep equality always ',
       image: require ('../../Assets/m13.jpeg'),
     },
     {
       id: 5,
-      title: 'JavaScript for Beginners',
-      description: 'A beginner-friendly guide to JavaScript programming',
+      title: 'Cultivating Calm and Inner Harmony',
+      description: 'Do you know how to enhance',
       image: require ('../../Assets/m14.jpeg'),
     },
     {
       id: 6,
-      title: 'Advanced CSS Techniques',
-      description: 'Master advanced CSS concepts and techniques',
+      title: 'Opening to Self-Compassion',
+      description: '',
       image: require ('../../Assets/m15.jpeg'),
     },
-    {
-      id: 7,
-      title: 'Introduction to React',
-      description: 'Learn the fundamentals of React.js',
-      // image: require ('../assets/img3.jpg'),
-    },
-    {
-      id: 8,
-      title: 'JavaScript for Beginners',
-      description: 'A beginner-friendly guide to JavaScript programming',
-     
-    },
-    {
-      id: 9,
-      title: 'Advanced CSS Techniques',
-      description: 'Master advanced CSS concepts and techniques',
-    },
+   
     // Add more courses as needed
   ];
 

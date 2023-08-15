@@ -15,6 +15,7 @@ import CreateCoursePage from './components/Courses/CreateCoursePage';
 import LevelContentEditor from './components/Courses/LevelContentEditor';
 import CreateTips from './components/DailyTips/CreateTips';
 import DailyTipsMain from './components/DailyTips/DailyTipsMain';
+
 // import EditTipPage from './components/DailyTips/EditTipPage';
 
 // import PostedTips from './components/DailyTips/PostedTips';
@@ -22,6 +23,7 @@ import DailyTipsMain from './components/DailyTips/DailyTipsMain';
 
 import Reports from './components/Reports/Reports';
 import IncomeStatement from './components/Reports/IncomeStatement';
+import HelpSupportPage from './components/HelpSupportPage';
 
 
 function App() {
@@ -41,11 +43,10 @@ function App() {
           <Route path="edit-levels" element={<LevelContentEditor/>}/>
           <Route path="daily-tips" element={<DailyTipsMain/>}/>
           <Route path="create-tips" element={<CreateTips/>}/>
-          {/* <Route path="edit-tip/:id" element={<EditTipPage/>}/> */}
+          <Route path="support" element={<HelpSupportPage/>}/>
+
           
           
-          {/* <Route path="posted-tips" element={<PostedTips/>}/>
-          <Route path="drafted-tips" element={<DraftedTips/>}/> */}
           
 
                    
