@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import EditTipPopup from './EditTipPopup';
+
+
 
 const TipCard = ({ tip }) => {
   const { title, day, description, image } = tip;
+  const [editedTip, setEditedTip] = useState(null);
+
+  const handleEditClick = (tip) => {
+    setEditedTip(tip);
+  };
+  const handleSaveEdit = (updatedTip) => {
+    // Here you can update the user data in your state or API
+    // For this example, I'll just console.log the updated user
+    console.log('Updated Tip:', updatedTip);
+    setEditedTip(null);
+  };
+  
 
   return (
     <div className="bg-white p-4 rounded-lg shadow-xl w-full  mb-4 flex justify-between items-center">
@@ -24,25 +39,21 @@ const TipCard = ({ tip }) => {
           <FaEdit />
         </button> */}
 
-        <Link to= {`/edit-tip/${tip.id}`} >
          < button className="text-green-600 hover:text-green-800"
+            onClick={()=> handleEditClick(tip)}
         >
           <FaEdit className="text-xl mr-7 " />
           </button>
-        </Link>
-
-        {/* <button
-          onClick={() => handleDeleteTip(tip.id)} 
-          className="text-red-600 hover:text-red-800"
-        >
-          <FaTrash className="text-xl" />
-        </button> */}
-        <Link >
+        
+        
         <button className="text-red-500 text-xl">
           <FaTrash />
         </button>
-        </Link>
+       
       </div>
+      {editedTip && (
+        <EditTipPopup tip={editedTip} onSave={handleSaveEdit} onClose={() => setEditedTip(null)} />
+      )}
     </div>
   );
 };
