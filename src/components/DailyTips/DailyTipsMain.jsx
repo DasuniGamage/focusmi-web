@@ -75,19 +75,19 @@ const PostedTips = [
       {
         id: 1,
         title: 'Tip 5',
-        description: 'How to manage ',
+        description: 'How many hours do you sleep for a day? ',
         image: require ('../../Assets/m10.jpeg'),
       },
       {
         id: 2,
         title: 'Tip 10',
-        description: 'Work on time?',
+        description: 'Benefits of doing Yoga',
         image: require ('../../Assets/m11.jpeg'),
       },
       {
         id: 3,
         title: 'Tip 20',
-        description: 'YOGA',
+        description: 'Meditation',
         
         image: require ('../../Assets/m12.jpeg'),
       },
