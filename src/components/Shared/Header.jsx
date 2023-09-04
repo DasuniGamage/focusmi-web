@@ -21,7 +21,7 @@ function Header() {
             {({ open }) => (
               <>
                 <Popover.Button className= {classNames(open && 'bg-slate-50',"p-2 rounded-sminline-flex items-center focus:outline-none hover:text-opacity-100 active:bg-[#eef2ed]")}>
-                  <FiBell size={20}/>
+                  <FiMessageSquare size={20}/>
                 </Popover.Button>
 
                       <Transition
@@ -50,7 +50,7 @@ function Header() {
             {({ open }) => (
               <>
                 <Popover.Button className= {classNames(open && 'bg-slate-50',"p-2 rounded-sminline-flex items-center focus:outline-none hover:text-opacity-100 active:bg-[#eef2ed]")}>
-                  <FiMessageSquare size={20}/>
+                  <FiBell size={20}/>
                 </Popover.Button>
 
                       <Transition

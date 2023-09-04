@@ -29,7 +29,7 @@ const DailyTipsAdmin = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="bg-white p-6 rounded-lg shadow-2xl w-[800px] mb-10">
-        <h2 className="text-2xl font-bold text-[#55a06a] mb-4 ">Create Daily Tips</h2>
+        <h2 className="text-2xl font-bold text-[#55a06a] mb-4 flex flex-col items-center">Create Daily Tips</h2>
         <div className="mb-4">
           <label className="block text-gray-700 font-semibold mb-2">
             Tip Title:

@@ -150,7 +150,7 @@ const LevelContentEditor = ({ levelNumber, onSave }) => {
       <div className="bg-white shadow-2xl p-4 rounded-md mt-9 w-[1000px] h-[500px] pt-10 ml-8 relative ">
   
   
-      <h2 className="text-[30px] font-bold text-[#55a06a] mb-4 flex justify-center"> Level {levelNumber}</h2>
+      <h2 className="text-[30px] font-bold text-[#55a06a] mb-4 flex justify-center"> Level 1 {levelNumber}</h2>
       
       <div className="flex justify-center gap-10">
             <label htmlFor="title" className="block mt-5 text-black w-[300px]">
